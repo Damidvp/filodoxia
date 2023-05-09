@@ -2,6 +2,8 @@
 body {
   font-family: "Abel", sans-serif;
   width: 100%;
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
@@ -9,35 +11,49 @@ body {
 }
 body header {
   width: 100%;
+  background-color: #373385;
+  padding: 0;
+  margin: 0;
 }
 body header nav {
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 1em 1.5em;
+  justify-content: space-around;
+  padding: 1.7em 1em;
 }
 body header nav ul {
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
-  gap: 1.5em;
+  gap: 2.5em;
   padding: 0;
   margin: 0;
 }
 body header nav ul li a {
   white-space: nowrap;
   text-decoration: none;
+  color: #FE9E01;
+  font-size: 1.5em;
 }
 body header nav form {
   display: flex;
+  flex-flow: column nowrap;
+  gap: 0.1em;
+}
+body header nav form #nav-connect {
+  display: flex;
   flex-flow: row nowrap;
-  gap: 0.6em;
+  gap: 0.3em;
 }
 body header nav form a {
   white-space: nowrap;
   text-decoration: none;
+  color: #FE9E01;
+  font-style: italic;
 }
 body main {
+  width: 90%;
   padding: 0 10em;
   display: flex;
   flex-flow: column nowrap;
@@ -52,7 +68,7 @@ body main h2 {
 body main #s-actus main {
   display: flex;
   justify-content: center;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   gap: 4em;
 }
 body main #s-photos main {
@@ -66,22 +82,26 @@ body main #s-photos main img {
 }
 body footer {
   width: 100%;
+  background-color: #AD60B5;
 }
 body footer nav {
   display: flex;
   justify-content: center;
+  padding: 0 2em;
 }
 body footer nav ul {
   width: 100%;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  align-content: center;
   padding: 0;
   margin: 0;
 }
 body footer nav ul li a {
   white-space: nowrap;
   text-decoration: none;
+  color: #FE9E01;
 }
 
 /*# sourceMappingURL=index.css.map */
